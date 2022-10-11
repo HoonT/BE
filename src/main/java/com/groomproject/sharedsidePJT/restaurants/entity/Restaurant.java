@@ -34,6 +34,10 @@ public class Restaurant {
     private LocalDateTime closeTime;
     // 예약가능 시간
     private LocalDateTime availableTime;
+    // 예약가능 인원
+    private int availableCount;
+    // 쉬는 요일
+    private String holiday;
 
     public RestaurantResponse toResponse() {
         return RestaurantResponse.builder()

@@ -6,7 +6,7 @@ package com.groomproject.sharedsidePJT.baseUtil.Exception;
  */
 
 public class BussinessException extends RuntimeException{
-    public BussinessException(ExMessage exMessage) {
+    public BussinessException(String exMessage) {
         super(exMessage.getMessage());
     }
 }
