@@ -1,5 +1,6 @@
 package com.groomproject.sharedsidePJT.restaurants.repository;
 
+import com.groomproject.sharedsidePJT.restaurants.dto.RestaurantRequest;
 import com.groomproject.sharedsidePJT.restaurants.entity.Restaurant;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
