@@ -33,4 +33,9 @@ public class RestaurantResponse {
 
     // 테마
     private String theme;
+
+    // 위치 정보
+    // 이미지
+    // 메뉴
+
 }
