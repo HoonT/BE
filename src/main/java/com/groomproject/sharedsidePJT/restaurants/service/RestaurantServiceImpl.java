@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class RestaurantServiceImpl implements RestaurantService{
+public class RestaurantServiceImpl implements RestaurantService {
 
     private RestaurantRepository restaurantRepository;
 
@@ -26,7 +26,7 @@ public class RestaurantServiceImpl implements RestaurantService{
         return restaurantRepository.findById(id)
                 .orElseThrow(() -> {
                     log.info("restaurant error - " + ExMessage.RESTAURANT_NONE_DATA.getMessage());
-                    throw new BusinessException(ExMessage.RESTAURANT_NONE_DATA.getMessage());
+                    throw new BusinessException(ExMessage.RESTAURANT_NONE_DATA);
                 }).toResponse();
     }
 
