@@ -5,11 +5,12 @@ package com.groomproject.sharedsidePJT.baseUtil.Exception;
  * @CreateAt : 2022/10/04
  */
 
-public class BusinessException extends RuntimeException{
+public class BusinessException extends RuntimeException {
     public BusinessException() {
         super();
     }
-    public BusinessException(String exMessage) {
+
+    public BusinessException(ExMessage exMessage) {
         super(exMessage.getMessage());
     }
 
@@ -19,5 +20,9 @@ public class BusinessException extends RuntimeException{
 
     public BusinessException(Throwable cause) {
         super(cause);
+    }
+
+    public BusinessException(String message) {
+        super(message);
     }
 }
