@@ -1,13 +1,13 @@
 package com.groomproject.sharedsidePJT.restaurants.entity;
 
+import com.groomproject.sharedsidePJT.restaurants.dto.MenuDto;
 import com.groomproject.sharedsidePJT.restaurants.dto.RestaurantResponse;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -38,6 +38,10 @@ public class Restaurant {
     private int availableCount;
     // 쉬는 요일
     private String holiday;
+    // 메뉴
+    @OneToMany
+    @JoinColumn
+    private List<menu> menu = new ArrayList<>();
 
     public RestaurantResponse toResponse() {
         return RestaurantResponse.builder()
