@@ -32,13 +32,8 @@ public class RestaurantServiceImpl implements RestaurantService {
 
     @Override
     public void delete(Long restaurantId) {
-
+        restaurantRepository.deleteById(restaurantId);
     }
-//    @Override
-//    public void delete(Long restaurantId) {
-//        restaurantId.deleteById(restaurantId);
-//      deleteById가 무슨 일인지 오류로 뜹니다.
-//    }
 
     @Override
     public RestaurantResponse save(RestaurantRequest request) {
