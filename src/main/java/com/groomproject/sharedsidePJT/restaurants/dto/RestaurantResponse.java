@@ -1,7 +1,6 @@
 package com.groomproject.sharedsidePJT.restaurants.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.groomproject.sharedsidePJT.restaurants.entity.Restaurant;
 import lombok.Builder;
 import lombok.Data;
 
@@ -38,6 +37,5 @@ public class RestaurantResponse {
     // 위치 정보
     // 이미지
     // 메뉴
-    private List<MenuDto> menuList;
 
 }

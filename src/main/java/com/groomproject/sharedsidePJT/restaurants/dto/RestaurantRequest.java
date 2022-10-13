@@ -30,6 +30,7 @@ public class RestaurantRequest {
     // 종료 시간
     private LocalDateTime closeTime;
     //메뉴
+    private List<menu> menu;
 
 
 
