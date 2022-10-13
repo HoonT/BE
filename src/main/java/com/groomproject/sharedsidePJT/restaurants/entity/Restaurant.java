@@ -51,6 +51,7 @@ public class Restaurant {
                 .openTime(this.openTime)
                 .closeTime(this.closeTime)
                 .availableTime(this.availableTime)
+                .restaurantId(this.id)
                 .build();
     }
 }

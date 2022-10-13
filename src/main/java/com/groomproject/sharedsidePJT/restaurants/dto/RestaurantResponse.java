@@ -6,12 +6,13 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @Builder
 public class RestaurantResponse {
     // 식당 정보
-    private Restaurant restaurant;
+    private Long restaurantId;
 
     //시작 시간
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss.SSS")
@@ -37,5 +38,6 @@ public class RestaurantResponse {
     // 위치 정보
     // 이미지
     // 메뉴
+    private List<MenuDto> menuList;
 
 }
